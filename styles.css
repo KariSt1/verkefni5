@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  margin-bottom: 0.625rem;
+  padding: 0.5rem;
+
+  max-width: 29.375rem;
+  max-height: 20rem;
+
+  word-break: break-word;
+  overflow: auto;
+}
+
+.card--header {
+  font-size: 1.5rem;
+  line-height: 1; 
+}
+
+.card--content {
+  display: flex;
+  flex: 1;
+}
+
+.card--text {
+  font-size: 1rem;
+  line-height: 1.25; /* 20/16 */
+}
+
+.card--image {
+  padding-right: 1.25rem;
+  flex: 0 0 9.375rem;
+}
+
+.card--img {
+  max-width: 100%
+}
+
+.card--list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card--listitem {
+  font-weight: bold;
+  padding-right: 1em;
+  list-style: none;
+}
+
+.first {
+  order: 1;
+}
+
+.next {
+  order: 2;
+}
